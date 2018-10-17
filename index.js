@@ -48,7 +48,7 @@ var camera, light, scene, renderer, rectangle, scene2, renderer2, div, controls;
 
             //HTML
             element = document.createElement('div');
-            element.innerHTML = 'Plain text inside a div.';
+            element.innerHTML = '<h1>HELLO</h1>';
             element.className = 'animated bounceInDown' ; 
             element.style.background = "#0094ff";
             element.style.fontSize = "2em";
@@ -64,10 +64,10 @@ var camera, light, scene, renderer, rectangle, scene2, renderer2, div, controls;
 
             //CSS3D Renderer
             renderer2 = new THREE.CSS3DRenderer();
-            renderer2.setSize(window.innerWidth, window.innerHeight);
+            //renderer2.setSize(window.innerWidth, window.innerHeight);
             renderer2.domElement.style.position = 'absolute';
             renderer2.domElement.style.top = 0;
-            document.body.appendChild(renderer2.domElement);
+            //document.body.appendChild(renderer2.domElement);
         }
 
         function animate() {
@@ -76,3 +76,4 @@ var camera, light, scene, renderer, rectangle, scene2, renderer2, div, controls;
             renderer.render(scene, camera);
             controls.update();
         }
+
